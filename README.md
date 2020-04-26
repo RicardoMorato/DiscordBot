@@ -78,3 +78,10 @@ Choose the server you want to add it to and click "Authorize". Do note that you'
   <img src="https://discordjs.guide/assets/img/BAUsjyg.c05e3b60.png" alt="Discord's bot authorized to server"/>
 </p>
 Congratulations! You've successfully added your bot to your Discord server. It should show up in your server's member list now!
+
+#### References
+I did a lot of research on this library, but really didn't find the amount of introductions and guidelines that I was expecting. However, I found the one the was almost my spiritual guide during the development of my first bots and of this tutorial. Also, a lot of things in this tutorial I got from there, including the images and links. So I really ask you to go there read all their documentation. It is super useful and complete.
+
+- [Discord.js Guide](https://discordjs.guide/) the introductory guide that really helped me out.
+- The [official discord.js documentation](https://discord.js.org/#/docs/main/stable/general/welcome)
+- A discord.js guide also really complete, but that I didn't use this often: [An Idiot's Guide](https://anidiots.guide/)
