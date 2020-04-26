@@ -51,3 +51,30 @@ Let's imagine that you have a bot on over 1000 servers, and it took you many, ma
 
 ##### WARNING
 If you ever somehow leak your token - either commit it to a repository (like this one), post it in a support channel, etc. - or otherwise see your bot in danger, return to it's page and regenerate a new one. Your old token will become invalid and you'll need to update it with the new one in all the places you've used it.
+
+#### Great, I have a bot, but how do I add it to my server
+Before you're actually able to see your bot in your own (or other) servers, it needs to be added using a special invite link that can be created using your bot application's client ID.
+
+The basic version of one such link looks like this:
+
+```
+https://discordapp.com/oauth2/authorize?client_id=INSERT_CLIENT_ID_HERE&scope=bot
+````
+The structure of the url is quite simple:
+
+- The first part is just Discord's standard structure for authorizing an OAuth2 application (such as your bot application) for entry to a Discord server.
+- The second part that says `client_id=...` is to specify which application you want to authorize. You'll need to replace this part with your client's ID in order to create a valid invite link.
+- Lastly, the third part which says `scope=bot` specifies that you want to add this application as a Discord bot.
+
+##### Creating and using your own invite link
+As mentioned above, you'll need to replace the client_id parameter with your client's ID in order to generate your invite link. To find your app's ID, head back to the [My Apps page](https://discordapp.com/developers/applications) under the "Applications" section once again. The client_id should be next to your bot's image, you can just copy it.
+
+Insert your app's ID into the link template and then access it in your browser. You should see something like this (with your bot's username and avatar):
+<p align="center">
+  <img src="https://discordjs.guide/assets/img/A8l70bj.3d267a22.png" alt="Discord's connect bot to server page"/>
+</p>
+Choose the server you want to add it to and click "Authorize". Do note that you'll need the "Manage Server" permission on a server in order to be able to add your bot there. This should then present you a nice confirmation message:
+<p align="center">
+  <img src="https://discordjs.guide/assets/img/BAUsjyg.c05e3b60.png" alt="Discord's bot authorized to server"/>
+</p>
+Congratulations! You've successfully added your bot to your Discord server. It should show up in your server's member list now!
