@@ -24,27 +24,30 @@ client.once('ready', () => {
 
 client.on('message', (message) => {
   const { author, content, channel } = message;
-  const eiBotArgs = message.content.slice('/ei_bot'.length).split(' ');
+  if (!content.startsWith(prefix) || message.author.bot) return;
+
+  const args = message.content.slice(prefix.length).split(' ');
+  const command = args.shift().toLowerCase();
 
   if (content.substring(0, 1) === prefix) {
-    switch (content) {
-      case `${prefix}ping`:
+    switch (command) {
+      case 'ping':
         channel.send('PONG!');
         break;
-      case `${prefix}vtnc`:
+      case 'vtnc':
         vtnc(author.username, channel);
         break;
-      case `${prefix}oi`:
+      case 'oi':
         oi(author, channel);
         break;
-      case `${prefix}dilma`:
+      case 'dilma':
         dilma(channel);
         break;
-      case `${prefix}help`:
+      case 'help':
         listCommands(author.username, channel);
         break;
-      case `${prefix}ei_bot`:
-        eiBot(channel, eiBotArgs, author.username);
+      case 'ei_bot':
+        eiBot(channel, args, author.username);
         break;
       default:
         channel.send(

@@ -24,7 +24,7 @@ const frases = [
 ];
 
 function eiBot(channel, args, username) {
-  if (!args) {
+  if (args.length <= 1) {
     channel.send(`Você é fraco ${username}, lhe faltam perguntas na frase.`);
   } else {
     const randomNumber = Math.floor(Math.random() * frases.length);

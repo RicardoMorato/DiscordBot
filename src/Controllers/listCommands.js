@@ -1,7 +1,7 @@
 const commands = [
   {
     command: 'ping',
-    help: 'Que tal jogar uma partida amigável de Ping-pong com o bot? :ping_pong:',
+    help: 'Que tal jogar uma partida amigável de ping-pong com o bot? :ping_pong:',
   },
   {
     command: 'ei_bot',
