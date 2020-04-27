@@ -85,3 +85,4 @@ I did a lot of research on this library, but really didn't find the amount of in
 - [Discord.js Guide](https://discordjs.guide/) the introductory guide that really helped me out.
 - The [official discord.js documentation](https://discord.js.org/#/docs/main/stable/general/welcome)
 - A discord.js guide also really complete, but that I didn't use this often: [An Idiot's Guide](https://anidiots.guide/)
+- How to [host a discord bot for free using heroku](https://medium.com/@mason.spr/hosting-a-discord-js-bot-for-free-using-heroku-564c3da2d23f)
