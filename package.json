@@ -1,0 +1,19 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "This repository was created with the intention of teaching and co-building with a group of colleagues a simple bot made for Discord.",
+  "main": "src/bot.js",
+  "repository": "https://github.com/RicardoMorato/discord-bot.git",
+  "author": "Ricardo Morato Rocha <ricardomorator@hotmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2"
+  }
+}
