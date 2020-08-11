@@ -5,6 +5,7 @@ import help from "./Controllers/help";
 import oi from "./Controllers/oi";
 import heyBot from "./Controllers/heyBot";
 import dilminha from "./Controllers/dilminha";
+import dolarToday from "./Controllers/dolarToday";
 
 const { TOKEN } = process.env;
 const prefix = "/";
@@ -37,6 +38,9 @@ client.on("message", ({ author, content, channel }) => {
         break;
       case "dilma":
         dilminha(channel);
+        break;
+      case "dolar":
+        dolarToday(channel);
         break;
       default:
         channel.send(
