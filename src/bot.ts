@@ -1,8 +1,10 @@
 import Discord from "discord.js";
 
 require("dotenv/config");
-import help from './Controllers/help';
-import oi from './Controllers/oi';
+import help from "./Controllers/help";
+import oi from "./Controllers/oi";
+import heyBot from "./Controllers/heyBot";
+import dilminha from "./Controllers/dilminha";
 
 const { TOKEN } = process.env;
 const prefix = "/";
@@ -29,6 +31,12 @@ client.on("message", ({ author, content, channel }) => {
         break;
       case "help":
         help(author, channel);
+        break;
+      case "ei_bot":
+        heyBot(author, channel, args);
+        break;
+      case "dilma":
+        dilminha(channel);
         break;
       default:
         channel.send(

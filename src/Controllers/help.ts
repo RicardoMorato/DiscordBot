@@ -8,7 +8,7 @@ const listOfCommands = [
   },
   {
     name: "ei_bot",
-    help: "Faça uma pergunta para o bot e ele lhe responderá :man_mage:",
+    help: "Faça uma pergunta de sim ou não para o bot e ele lhe responderá :man_mage:",
   },
   {
     name: "dilma",
