@@ -22,8 +22,10 @@ client.on("message", ({ author, content, channel }) => {
       case "ping":
         channel.send("PONG!");
         break;
-
       default:
+        channel.send(
+          "Que comando legal, quero aprender! (https://github.com/RicardoMorato/discord-bot)"
+        );
         break;
     }
   }
