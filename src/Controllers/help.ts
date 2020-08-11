@@ -2,21 +2,27 @@ import { User, TextChannel, DMChannel, NewsChannel } from "discord.js";
 
 const listOfCommands = [
   {
-    name: "ping",
+    name: "**ping**",
     help:
       "Que tal jogar uma partida amigável de ping-pong com o bot? :ping_pong:",
   },
   {
-    name: "ei_bot",
-    help: "Faça uma pergunta de sim ou não para o bot e ele lhe responderá :man_mage:",
+    name: "**ei_bot**",
+    help:
+      "Faça uma pergunta de sim ou não para o bot e ele lhe responderá :man_mage:",
   },
   {
-    name: "dilma",
+    name: "**dilma**",
     help: "Mostra uma frase engraçada da nossa ex-presidente Dilma",
   },
   {
-    name: "oi",
+    name: "**oi**",
     help: 'Responde ao seu "oi" e lhe conta uma verdade :speak_no_evil:',
+  },
+  {
+    name: "**dolar**",
+    help:
+      "Responde com o valor do dólar do dia (ou pelo menos o que a gente consegue pela api hehehe) :money_with_wings:",
   },
 ];
 
