@@ -1,9 +1,8 @@
 import Discord from "discord.js";
 
 require("dotenv/config");
-const {
-  oi,
-} = require('./Controllers');
+import help from './Controllers/help';
+import oi from './Controllers/oi';
 
 const { TOKEN } = process.env;
 const prefix = "/";
@@ -27,6 +26,9 @@ client.on("message", ({ author, content, channel }) => {
         break;
       case "oi":
         oi(author, channel);
+        break;
+      case "help":
+        help(author, channel);
         break;
       default:
         channel.send(
