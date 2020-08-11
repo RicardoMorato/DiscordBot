@@ -18,11 +18,6 @@ const listOfCommands = [
     name: "oi",
     help: 'Responde ao seu "oi" e lhe conta uma verdade :speak_no_evil:',
   },
-  {
-    name: "vtnc",
-    help:
-      "Em momentos de fúria você pode usar esse comando e o bot irá te responder de forma super educada :smile:",
-  },
 ];
 
 const allGreetings = ["Olá, ", "Opa, ", "E aí, ", "Oi, "];
