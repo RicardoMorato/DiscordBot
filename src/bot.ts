@@ -1,6 +1,9 @@
 import Discord from "discord.js";
 
 require("dotenv/config");
+const {
+  oi,
+} = require('./Controllers');
 
 const { TOKEN } = process.env;
 const prefix = "/";
@@ -21,6 +24,9 @@ client.on("message", ({ author, content, channel }) => {
     switch (command) {
       case "ping":
         channel.send("PONG!");
+        break;
+      case "oi":
+        oi(author, channel);
         break;
       default:
         channel.send(
