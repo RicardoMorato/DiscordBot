@@ -15,7 +15,18 @@ client.on("message", ({ author, content, channel }) => {
   if (!content.startsWith(prefix) || author.bot) return;
 
   const args = content.slice(prefix.length).split(" ");
-  console.log(args);
+  const command = args.shift()?.toLowerCase();
+
+  if (content.substring(0, 1) === prefix) {
+    switch (command) {
+      case "ping":
+        channel.send("PONG!");
+        break;
+
+      default:
+        break;
+    }
+  }
 });
 
 client.login(TOKEN);
