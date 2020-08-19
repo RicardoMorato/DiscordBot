@@ -42,6 +42,9 @@ client.on("message", ({ author, content, channel }) => {
       case "dolar":
         dolarToday(channel);
         break;
+      case "pill":
+        console.log('pill');
+      break
       default:
         channel.send(
           "Que comando legal, quero aprender! (https://github.com/RicardoMorato/discord-bot)"
