@@ -6,8 +6,9 @@ import oi from "./Controllers/oi";
 import heyBot from "./Controllers/heyBot";
 import dilminha from "./Controllers/dilminha";
 import dolarToday from "./Controllers/dolarToday";
+import pill from "./Controllers/pill";
 
-const { TOKEN } = process.env;
+const { TOKEN, GS_CLIENT_ID, GS_CLIENT_SECRET, SHEET_ID } = process.env;
 const prefix = "/";
 const client = new Discord.Client();
 
@@ -43,8 +44,8 @@ client.on("message", ({ author, content, channel }) => {
         dolarToday(channel);
         break;
       case "pill":
-        console.log('pill');
-      break
+        pill(author, channel, args, GS_CLIENT_ID, GS_CLIENT_SECRET, SHEET_ID);
+        break;
       default:
         channel.send(
           "Que comando legal, quero aprender! (https://github.com/RicardoMorato/discord-bot)"
