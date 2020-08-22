@@ -17,10 +17,10 @@ async function dolarToday(channel: TextChannel | DMChannel | NewsChannel) {
   );
   const pokemon = pokemonData.data.name;
 
-  channel.send(`Dólar hoje: ${dolarToday}, Pokemon: ${pokemon}`);
-  channel.send({
-    files:
+  channel.send(`Dólar hoje: ${dolarToday}, Pokemon: ${pokemon}`, {
+    files: [
       `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${dolarToday}.png`,
+    ],
   });
 }
 
