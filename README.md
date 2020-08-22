@@ -24,7 +24,7 @@ After all of it you should see a page like this:
 <p align="center">
   <img src="https://discordjs.guide/assets/img/create-app.cb14ef85.png" alt="Discord's new application main page"/>
 </p>
-You can add some description, a nice picture and a name for your application. Once you've saved your changes, you can move on by selecting the "Bot" tab in the left pane.
+You can add some description, a nice picture and a name for your application. Once you've saved your changes, you can move on by selecting the "Bot" tab in the menu on the left.
 <p align="center">
   <img src="https://discordjs.guide/assets/img/create-bot.dff0f01e.png" alt="Discord's application bot page"/>
 </p>
@@ -47,7 +47,9 @@ Let's imagine that you have a bot on over 1000 servers, and it took you many, ma
 - Attempt to delete as many channels as they can;
 - Attempt to kick or ban as many server members as they possibly can;
 - Make your bot leave all of the servers it has joined.
-- All that and much, much more. Sounds pretty terrible, right? So make sure to keep your token as safe as possible!
+- All that and much, much more.
+
+Sounds pretty terrible, right? So make sure to keep your token as safe as possible!
 
 ##### WARNING
 If you ever somehow leak your token - either commit it to a repository (like this one), post it in a support channel, etc. - or otherwise see your bot in danger, return to it's page and regenerate a new one. Your old token will become invalid and you'll need to update it with the new one in all the places you've used it.
